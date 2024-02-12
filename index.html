@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Football Layout</title>
+    <title>Exploring Europe's Top 5 Football Leagues</title>
     <!-- Font Awesome Connect  -->
     <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css" />
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- CSS Connect  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Header Start  -->
-    <header>
+    <header style="padding: 3px 0px;">
       <div class="container flex space-between align-center">
         <nav class="main-manu">
           <ul class="flex">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="teams.html">Teams</a></li>
-            <li><a href="#">Players</a></li>
-            <li><a href="#">Leagues</a></li>
+            <li><a href="players.html">Players</a></li>
           </ul>
         </nav>
         <!-- <div class="menu-button">
@@ -32,28 +34,38 @@
     </header>
     <!-- Header End  -->
 
-    <!-- Hero Section Start  -->
-    <div class="hero-section">
-      <div class="container">
-        <div class="hero-content-wrap flex">
-          <div class="left">
-            <h2>
-              2023/2024 TOP 5 <br />
-              EUROPEAN <br />
-              FOOTBALL 
-            </h2>
-            <!-- <a href="#" class="btn2"
-              >Watch Live
-              <span><i class="fas fa-long-arrow-alt-right"></i></span>
-            </a> -->
-          </div>
-          <div class="right">
-            <img src="./assets/images/banner.png" alt="Footballer Image" />
-          </div>
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/assets/images/players/stadium1.jpg" alt="First slide" style="height: 700px;">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/assets/images/players/stadium2.jpg" alt="Second slide" style="height: 700px;">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/assets/images/players/stadium3.jpg" alt="Third slide" style="height: 700px;">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <!-- Hero Section End  -->
+
+
+
 
     <!-- Footballer Row Section  -->
     <div class="footballer">
@@ -61,143 +73,170 @@
         <div class="row flex">
           <div class="content">
             <img
-              src="./assets/images/players/player-1.png"
+              src="./assets/images/players/liverpool.jpg"
               alt="Neymar Image"
             />
-            <h3>Neyumar Jr</h3>
+            <h3>LiverPool FC</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
+              Liverpool Football Club is a professional football club based in Liverpool, England. The club competes in the Premier League, 
+              the top tier of English football. Founded in 1892, the club joined the Football League the following year and has played its 
+              home games at Anfield since its formation.Liverpool is one of the most valuable and widely supported clubs in the world.
+              The club's anthem is "You'll Never Wal  k Alone".
             </p>
           </div>
           <div class="content">
             <img
-              src="./assets/images/players/player-2.png"
+              src="./assets/images/players/city.jpg"
               alt="Neymar Image"
             />
-            <h3>Lionel Messi</h3>
+            <h3>Manchester City</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
+              Manchester City Football Club is a professional football club based in Manchester, England, that competes in the Premier League, 
+              the top flight of English football. Founded in 1880 as St. Mark's (West Gorton), they became Ardwick Association Football Club in
+               1887 and Manchester City in 1894. The club's home ground is the City of Manchester Stadium in east Manchester, to which they moved
+                in 2003, having played at Maine Road since 1923. Manchester City adopted their sky blue home shirts in 1894, the first season with
+                 the current name. Over the course of its history.
             </p>
           </div>
           <div class="content">
             <img
-              src="./assets/images/players/player-3.png"
+              src="./assets/images/players/real-madrid.jpg"
               alt="Neymar Image"
             />
-            <h3>Cristiano Ronaldo</h3>
+            <h3>Real Madrid CF</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
-            </p>
-          </div>
-
-          <div class="content">
-            <img
-              src="./assets/images/players/player-4.png"
-              alt="Neymar Image"
-            />
-            <h3>Paulo dybala</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
+              Real Madrid Club de Fútbol, commonly referred to as Real Madrid, 
+              is a Spanish professional football club based in Madrid. The club competes in La Liga, the top tier of Spanish football.Founded
+               in 1902 as Madrid Football Club, the club has traditionally worn a white home kit since its inception. The honorific title real
+                is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. 
+                Real Madrid have played their home matches in the 83,186-capacity Santiago Bernabéu in downtown Madrid since 1947.
             </p>
           </div>
 
           <div class="content">
             <img
-              src="./assets/images/players/player-5.png"
+              src="./assets/images/players/salah.jpg"
               alt="Neymar Image"
             />
-            <h3>Masut Ozil</h3>
+            <h3>Mohamed Salah</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
+              Mohamed Salah Hamed Mahrous Ghaly born 15 June 1992, known as Mohamed Salah or Mo Salah, is an Egyptian professional 
+              footballer who plays as a right winger or forward for Premier League club Liverpool and captains the Egypt national team. Regarded as one 
+              of the best players of his generation and among the greatest African players of all time, he is known for his clinical finishing, dribbling
+               and speed.
             </p>
           </div>
 
           <div class="content">
             <img
-              src="./assets/images/players/player-6.png"
-              alt="Neymar Image"
-            />
-            <h3>mauro lcardi</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
-            </p>
-          </div>
-
-          <div class="content">
-            <img
-              src="./assets/images/players/player-7.png"
-              alt="Neymar Image"
-            />
-            <h3>di maria</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
-            </p>
-          </div>
-
-          <div class="content">
-            <img
-              src="./assets/images/players/player-8.png"
-              alt="Neymar Image"
-            />
-            <h3>Kylian Mbappé</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
-            </p>
-          </div>
-
-          <div class="content">
-            <img
-              src="./assets/images/players/player-9.png"
-              alt="Neymar Image"
-            />
-            <h3>mohammed salah</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
-            </p>
-          </div>
-
-          <div class="content">
-            <img
-              src="./assets/images/players/player-10.png"
-              alt="Neymar Image"
-            />
-            <h3>Harry Kane</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
-            </p>
-          </div>
-
-          <div class="content">
-            <img
-              src="./assets/images/players/player-11.png"
+              src="./assets/images/players/kevin.jpg"
               alt="Neymar Image"
             />
             <h3>Kevin De Bruyne</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
+              Kevin De Bruyne (born 28 June 1991) is a Belgian professional footballer who plays as a midfielder for 
+              and captains both Premier League club Manchester City and the Belgium national team. He is widely regarded 
+              as one of the greatest players of his generation as well as one of the best midfielders in the world.Pundits 
+              have described him as a complete footballer.
             </p>
           </div>
 
           <div class="content">
             <img
-              src="./assets/images/players/player-12.png"
+              src="./assets/images/players/jude.jpg"
               alt="Neymar Image"
             />
-            <h3>philippe coutinho</h3>
+            <h3>Jude Bellingham</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
-              fermentum amet faucibus sed id nisi lectus at.
+              Jude Victor William Bellingham (born 29 June 2003) is an English professional footballer who plays as a midfielder 
+              for La Liga club Real Madrid and the England national team. In 2023, he won both major awards for male footballers 
+              aged under 21: the Golden Boy, for nominees playing in Europe over the last calendar year,[4] and the Kopa Trophy, 
+              for the world's best over the previous season.
+            </p>
+          </div>
+
+          <div class="content">
+            <img
+              src="./assets/images/players/bayern-munich.jpg"
+              alt="Neymar Image"
+            />
+            <h3>FC Bayern Munich</h3>
+            <p>
+              Fußball-Club Bayern München also known as FC Bayern , Bayern Munich, or simply Bayern, is a German professional sports club based in 
+              Munich, Bavaria. It is best known for its professional men's association football team, which plays in the Bundesliga, 
+              the top tier of the German football league system. Bayern is the most successful club in German football history, having
+               won a record 33 national titles, including eleven consecutively since 2013, and 20 national cups, along with numerous European 
+               honours.
+            </p>
+          </div>
+
+          <div class="content">
+            <img
+              src="./assets/images/players/inter.jpg"
+              alt="Neymar Image"
+            />
+            <h3>Inter Milan</h3>
+            <p>
+              Football Club Internazionale Milano, commonly referred to as Internazionale or simply Inter, 
+              and colloquially known as Inter Milan in English-speaking countries,is an Italian professional football club based 
+              in Milan, Lombardy. Inter is the only Italian side to have always competed in the top flight of Italian football since its debut 
+              in 1909.
+            </p>
+          </div>
+
+          <div class="content">
+            <img
+              src="./assets/images/players/psg.jpg"
+              alt="Neymar Image"
+            />
+            <h3>Paris Saint-Germain F.C.</h3>
+            <p>
+              Paris Saint-Germain Football Club, commonly referred to as Paris Saint-Germain, Paris, 
+              Paris SG or simply PSG, is a professional football club based in Paris, France. They compete in Ligue 1, the top division of French 
+              football. As France's most successful club, they have won over 40 official honours, including eleven league titles and one major 
+              European trophy. Their home ground is the Parc des Princes located in the 16th arrondissement of Paris near the commune 
+              Boulogne-Billancourt.
+            </p>
+          </div>
+
+          <div class="content">
+            <img
+              src="./assets/images/players/kane.jpg"
+              alt="Neymar Image"
+            />
+            <h3>Harry Kane</h3>
+            <p>
+              Harry Edward Kane MBE (born 28 July 1993) is an English professional footballer who plays as a striker for Bundesliga 
+              club Bayern Munich and captains the England national team. A prolific goalscorer with strong link play, Kane is regarded 
+              as one of the best players in the world and one of the best strikers of his generation. He is both Tottenham Hotspur's and
+               England's all-time highest goalscorer, as well as being the second-highest all-time goalscorer in the Premier League.
+               Kane has scored over 350 goals for club and country.
+            </p>
+          </div>
+
+          <div class="content">
+            <img
+              src="./assets/images/players/Lautaro_Martinez.jpg"
+              alt="Neymar Image"
+            />
+            <h3>Lautaro Martinez</h3>
+            <p>
+              Lautaro Javier Martínez (born 22 August 1997) is an Argentine professional footballer who plays as a striker for Serie A 
+              club Inter Milan, which he captains, and the Argentina national team. Regarded as one of the best strikers in the world, 
+              he is known for his work rate, positioning inside the box, link play and finishing.
+            </p>
+          </div>
+
+          <div class="content">
+            <img
+              src="./assets/images/players/mbappe.jpg"
+              alt="Neymar Image"
+            />
+            <h3>Kylian Mbappé</h3>
+            <p>
+              Kylian Mbappé Lottin (born 20 December 1998) is a French professional footballer who plays as a forward for Ligue 
+              1 club Paris Saint-Germain and captains the France national team. Regarded as one of the best players in the world, 
+              he is known for his dribbling, speed, and finishing.
             </p>
           </div>
         </div>
@@ -215,10 +254,10 @@
               2023/2024
             </h2>
             <p>
-              <h1>Liverpool Dominates Manchester with a 7-0 Victory</h1>
+              <h1>Liverpool Dominates Manchester United with a 7-0 Victory</h1>
               In a thrilling showdown at Anfield, Liverpool FC showcased a remarkable display of skill and determination, overwhelming Manchester United with an astonishing 7-0 victory. The match, which unfolded amidst an electric atmosphere, left fans in awe as Liverpool delivered a masterclass performance from start to finish.
 
-              From the opening whistle, Liverpool set the tone, exhibiting fluid passing and precise ball control that left Manchester United struggling to keep pace. The relentless attack of Liverpool's front line, led by the likes of Mohamed Salah, Sadio Mané, and Roberto Firmino, proved to be unstoppable as they constantly tested the Manchester defense with their lightning-fast pace and clinical finishing.
+              From the opening whistle, Liverpool set the tone, exhibiting fluid passing and precise ball control that left Manchester United struggling to keep pace. The relentless attack of Liverpool's front line, led by the likes of Mohamed Salah, and Roberto Firmino, proved to be unstoppable as they constantly tested the Manchester defense with their lightning-fast pace and clinical finishing.
             </p>
             <a href="https://youtu.be/iBuTEywEQ6U?si=RN1hm8Iww0Q64GTH" class="btn2" target="_blank"
               >Watch
@@ -228,7 +267,7 @@
             </a>
           </div>
           <div class="left">
-            <img src="./assets/images/match.jpg" alt="Messi Running Image" />
+            <img src="./assets/images/match.jpg" alt="Liverpool vs United" />
           </div>
         </div>
       </div>
@@ -245,9 +284,6 @@
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
           </li>
           <li>
-            <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-          </li>
-          <li>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
           </li>
           <li>
@@ -255,7 +291,7 @@
           </li>
         </ul>
 
-        <p>Copyright &copy; 2022 Football</p>
+        <p>Copyright &copy; 2023/2024 Football</p>
       </div>
     </footer>
     <!-- // Footer Section    -->
