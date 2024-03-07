@@ -1,0 +1,427 @@
+/* Custom Goggle Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+/* Global CSS  */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Global Class CSS */
+header {
+  background-color: #35363c;
+  padding: 3px 0px;
+  height: 80%;
+}
+.container {
+  width: 1150px;
+  margin: 0px auto;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.btn {
+  background-color: #e02c6d;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 44px;
+  display: inline-block;
+  width: 123px;
+  height: 44px;
+}
+
+.btn2 {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 1px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.btn2{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn2:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn2:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.btn2:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+
+
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+/* Header CSS Style  */
+.main-manu {
+  max-width: 50%;
+  flex-basis: 50%;
+  padding: 2%;
+}
+
+.main-manu ul {
+  justify-content: space-around;
+}
+.main-manu ul li {
+}
+.main-manu ul li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+.main-manu .menu-button {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.menu-button a {
+  background-color: #e02c6d;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 44px;
+  display: inline-block;
+  width: 123px;
+  height: 44px;
+}
+.menu-button a span {
+  padding-right: 10px;
+}
+
+/* Hero Section Css  */
+.hero-section {
+  background-color: #2d25a0;
+  padding: 50px 0px;
+}
+.hero-section .hero-content-wrap {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section .hero-content-wrap .left {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.hero-section .hero-content-wrap .left h2 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.hero-section .hero-content-wrap .left a {
+}
+.hero-section .hero-content-wrap .right {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.hero-section .hero-content-wrap .right img {
+  width: 100%;
+}
+
+/* Footballer Section Css */
+.footballer {
+  padding: 50px 0;
+}
+.footballer .row {
+  justify-content: space-between;
+}
+.footballer .row .content {
+  flex-basis: 31%;
+  max-width: 31%;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+.footballer .row .content img {
+  width: 100%;
+}
+.footballer .row .content h3 {
+  font-weight: bold;
+  font-size: 28px;
+  font-style: normal;
+  text-transform: capitalize;
+  line-height: 40px;
+  color: #18191f;
+  padding: 15px 0px;
+}
+.footballer .row .content p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c6c;
+  padding-bottom: 20px;
+}
+
+/* Copa Highlight Section */
+.copa {
+  padding: 80px 0px;
+}
+.copa .content {
+  justify-content: space-between;
+  align-items: center;
+}
+.copa .content .right {
+  flex-basis: 45%;
+  max-width: 45%;
+}
+.copa .content .right h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0a0826;
+  padding-bottom: 10px;
+}
+.copa .content .right p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+  padding-bottom: 30px;
+  width: 75%;
+}
+.copa .content .left {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.copa .content .left img {
+  width: 100%;
+}
+
+/* Footer Css  */
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+footer img {
+  width: 40%;
+}
+footer p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+footer .social {
+  display: block;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer ul li {
+  flex-basis: 4%;
+}
+footer ul li a {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  background-color: #0b0d1715;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s all ease;
+}
+footer ul li a i {
+  color: #0b0d1763;
+  font-size: 13px;
+}
+footer ul li:hover a {
+  background-color: #0b0d17de;
+}
+footer ul li:hover a i {
+  color: #fff;
+}
+
+/* Responsive Css Here  */
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  header nav {
+    display: none;
+  }
+  header .space-between {
+    justify-content: flex-end;
+  }
+
+  /* Hero Section  */
+  .hero-section .hero-content-wrap.flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-section .hero-content-wrap .left,
+  .hero-section .hero-content-wrap .right {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .hero-section .hero-content-wrap .left h2 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 60px;
+    color: #fff;
+    padding-bottom: 28px;
+  }
+  .hero-section .hero-content-wrap .right img {
+    width: 94%;
+    margin-top: 60px;
+  }
+
+  /* Footballer Css  */
+  .footballer .row.flex {
+    flex-direction: column;
+  }
+  .footballer .row .content {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    margin: 12px;
+  }
+
+  /* Copa Section  */
+  .copa {
+    padding: 45px 0px;
+  }
+  .copa .content.flex {
+    flex-direction: column;
+  }
+  .copa .content .right,
+  .copa .content .left {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .copa .content .right h2 {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 55px;
+    color: #0a0826;
+    padding-bottom: 10px;
+  }
+  .copa .content .right p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6c6c6c;
+    padding-bottom: 32px;
+    width: 100%;
+  }
+  .copa .content .left img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* Footer Section  */
+  footer {
+    padding: 30px 0;
+    text-align: center;
+  }
+  footer img {
+    width: 55%;
+  }
+  footer ul li {
+    flex-basis: 13%;
+  }
+  footer ul li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #0a0826;
+  /* border-radius: 5px; */
+}
+::-webkit-scrollbar-thumb{
+  background-color: #9a0b0b;
+  border-radius: 20px;
+}
